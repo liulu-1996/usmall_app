@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-decoration: none;
+}
+
+.boxS{
+    width:100vw;
+    background-color: #fefefe !important;
+}
+.boxS .hard{
+    width:100vw;
+    text-align: center;
+    color:white;
+    font-size: 0.43rem;
+    background-color: orange;
+    padding:0.2rem 0;
+
+}
+.boxS .bod{
+    display: flex;
+   
+}
+.boxS  .bod .leftM{
+    width:2.6rem;
+    background-color:#fefefe!important;
+}
+.boxS .bod .leftM li{
+    font-size: 0.25rem;
+    text-align: center;
+    padding:0.2rem;
+    border-left:0.1rem solid white;
+}
+.boxS .bod .leftM li:hover{
+    color:orange;
+    background-color: white;
+    border-color: slateblue;
+}
+.boxS .bod .rightM{
+    flex:1;
+    background-color: #fefefe !important;
+    overflow: hidden;
+}
+.boxS .bod .rightM li{
+    width:2rem;
+    height:2rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    margin:0.2rem 0.1rem 0;
+    background-color: slateblue;
+    color:white;
+    font-size: 0.2rem;
+    text-align: center;
+    float: left;
+   
+}
+.boxS .bod .rightM li a{
+    color:white;
+}
+.boxS .bod .rightM li img{
+    width:100%;
+    height:1.5rem;
+  
+
+}

@@ -1,0 +1,209 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #fefefe;
+    padding-bottom:1rem;
+   
+}
+.nuN{
+    position: relative;
+    overflow: hidden;
+}
+.herD{
+    width:100vw;
+    padding:0.1rem 0;
+    color:white;
+    font-size: 0.4rem;
+    background-color: orange;
+    text-align: center;
+    /* position: relative; */
+    position: fixed;
+    top:0;
+    left:0;
+}
+.herD span{
+    position: absolute;
+    left:0.2rem;
+    top:0.1rem;
+    color:white;
+    font-size: 0.4rem;
+}
+
+.boxL{
+    width:100vw;
+    height:6.5rem;
+}
+
+.boxL img{
+    width:100%;
+    height:4rem;
+}
+
+.boxL .cont{
+    display: flex;
+   
+}
+.boxL .cont .tit{
+    flex:1;
+    font-size:0.4rem;
+    padding-left:0.3rem;
+}
+.boxL .cont .shouC{
+    width:0.5rem;
+    height:0.7rem;
+    border-left:0.01rem solid silver;
+    color:orangered;
+    font-size:0.25rem;
+    padding:0  0.3rem 0 0.1rem;
+}
+.boxL .cont .shouC .cars{
+    width:0.3rem;
+    height:0.3rem;
+}
+.boxL .my{
+    width:100vw;
+    height:0.4rem;
+    font-size:0.3rem;
+    display: flex;
+}
+.boxL .my p{
+    color:red;
+    padding:0.1rem 0.3rem;
+}
+
+.boxL .my span{
+   color:orange;
+   height:0.4rem;
+   margin-right:0.1rem;
+   padding:0.1rem 0.2rem;
+   border:0.01rem solid orange;
+  
+  
+}
+
+.boxL .hua{
+    width:100vw;
+    height:0.4rem;
+    font-size: 0.3rem;
+    padding:0.4rem 0.3rem;
+    position: relative;
+}
+.boxL .hua i{
+    width:1.2rem;
+    height:0.02rem;
+    border-bottom:0.01rem solid #333333;
+   position: absolute;
+   left:0.3rem;
+   top:0.6rem;
+}
+
+.footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height:1rem;
+    border-top:0.01rem solid silver;
+    text-align: right;
+    background-color: white;
+
+}
+.footer p{
+    float:right;
+    font-size: 0.4rem;
+    color:white;
+    width:2rem;
+    background-color: orange;
+    padding:0.25rem 0.3rem;
+}
+
+.cont1 {
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.cont1 .cont-down{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height:8rem;
+    background-color: white;
+  
+   
+}
+
+.cont1 .cont-down .up{
+    width:100%;
+    display: flex;
+    padding:0.2rem ; 
+}
+.cont1 .cont-down .up .card{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.cont1 .cont-down .up .card img{
+    width:100%;
+    height:100%;
+}
+.cont1 .cont-down .up p{
+    font-size:0.5rem;
+    padding-left:0.2rem;
+}
+
+.cont1 .cont-down .tit{
+    width:100%;
+    height:1rem;
+    line-height: 1rem;
+    padding-left:0.2rem;
+    font-size: 0.5rem;
+}
+.cont1 .cont-down .guiG{
+    width:100%;
+   display: flex;
+}
+.cont1 .cont-down .guiG .r{
+    font-size: 0.4rem ;
+    border:0.01rem solid #333333;
+    border-radius: 0.2rem;
+    padding:0.2rem;
+    margin:0 0.2rem;
+}
+.cont1 .cont-down .addC{
+
+    width:100%;
+    height:1rem;
+   position: absolute;
+   bottom:0.15rem;
+   left:0;
+}
+.cont1 .cont-down .addC span{
+    width:3rem;
+    font-size: 0.4rem;
+    text-align: center;
+    padding:0.2rem 0;
+    border:0.01rem solid orange;
+    border-radius: 0.2rem;
+    background-color: orange;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+}
+
+
+
+
+
+
+
+

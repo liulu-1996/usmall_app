@@ -1,0 +1,63 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.list1{
+    display:flex;
+    width:100vw;
+    height:3rem;
+    margin:0.2rem 0;
+}
+.list1 .left-n{
+   width:2.1rem;
+   /* background-color: teal; */
+   height:3rem;
+   padding:0 0.2rem;
+}
+.list1 .left-n span{
+    display:inline-block;
+    width:2.3rem;
+    height:2.5rem;
+    background-color:salmon;
+    margin-top:0.2rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.list1 .left-n span img{
+    width:100%;
+    height:100%
+}
+.list1 .right-n{
+    flex:1;
+    /* background-color:wheat; */
+    height:3rem;
+    padding-left:0.2rem;
+    position: relative;
+}
+
+.list1 .right-n .tit{
+    font-size:0.4rem;
+    margin-top:0.2rem;
+    color:#333333;
+}
+.list1 .right-n .money{
+    position: absolute;
+    font-size:0.4rem;
+    left:0.2rem;
+    bottom:1.05rem;
+    color:#333333;
+}
+.list1 .right-n .ct{
+    width:2rem;
+    background-color: orange;
+    color:white;
+    font-size:0.2rem;
+    height:0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    position: absolute;
+    left:0.2rem;
+    bottom:0.2rem;
+}
