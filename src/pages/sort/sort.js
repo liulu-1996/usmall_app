@@ -50,7 +50,7 @@ class sort extends Component {
                                 return (
                                     <li key={item.id}>
                                         <NavLink to={'/sortDetail?id='+item.id} >
-                                            <img src={item.img} />
+                                            <img src={item.img} alt=""/>
                                             {item.catename}
                                         </NavLink>
 

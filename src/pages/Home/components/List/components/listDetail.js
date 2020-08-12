@@ -2,10 +2,13 @@ import React, { Component } from 'react'
 import GoBack from '../../../../../components/goBack/goBack'
 import querystring from 'querystring'
 import { connect } from 'react-redux'
-import { sDetail, reqIndexDetailAction } from '../../../../../store'
+import { sDetail, reqIndexDetailAction,getUser} from '../../../../../store'
 import './listDetail.css'
 import car from '../../../../../assets/img/img/cart_on.png'
 import { filterPrice } from '../../../../../filters/filters'
+import {addShop} from '../../../../../util/request'
+import {successAlert} from '../../../../../util/alert'
+
 class listDetail extends Component {
     constructor() {
         super()
@@ -15,13 +18,24 @@ class listDetail extends Component {
     }
 
     componentDidMount() {
-        const id = querystring.parse(this.props.location.search.slice(1)).id;
-        this.props.requestDetail(id)
+        this.id = querystring.parse(this.props.location.search.slice(1)).id;
+        this.props.requestDetail(this.id)
     }
     add() {
         this.setState({
             show: true
         })
+    }
+    addCar(){
+        // console.log(this.id,'0000')
+        addShop({uid:this.props.user.uid,goodsid: this.id,num:1}).then(res=>{
+            
+            successAlert(res.data.msg)
+            this.setState({
+                show: false
+            })
+        })
+       
     }
     render() {
         const { detail } = this.props
@@ -83,7 +97,7 @@ class listDetail extends Component {
                                                         }
                                                     </div>
                                                     <div className='addC'>
-                                                        <span> 加入购物车</span>
+                                                        <span onClick={()=>this.addCar()}> 加入购物车</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,7 +116,8 @@ class listDetail extends Component {
 const mapStateToProps = (state) => {
     // console.log(state, '22222222222222222')
     return {
-        detail: sDetail(state)
+        detail: sDetail(state),
+         user:getUser(state)
     }
 }
 

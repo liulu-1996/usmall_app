@@ -6,7 +6,9 @@ import { HashRouter } from 'react-router-dom'
 import './assets/js/rem'
 import { Provider } from "react-redux"
 import store from "./store"
+import 'antd-mobile/dist/antd-mobile.css'
 Component.prototype.$img = 'http://localhost:3000'
+
 ReactDOM.render(
 
    <Provider store={store}>

@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import qs from 'qs'
 //响应拦截
 axios.interceptors.response.use(res=>{
     console.log(res);
@@ -43,5 +43,49 @@ export const getGoods=(params)=>{
         url:"/api/getgoods",
         method:"get",
         params
+    })
+}
+
+//登录
+export const login = (data) => {
+    return axios({
+        url: "/api/login",
+        method: "post",
+        data: qs.stringify(data)
+    })
+}
+
+//加入购物车
+export const addShop = (data) => {
+    return axios({
+        url: "/api/cartadd",
+        method: "post",
+        data: qs.stringify(data)
+    })
+}
+
+//购物车列表
+export const requestShopList = (data) => {
+    return axios({
+        url: "/api/cartlist",
+        params: data
+    })
+}
+
+//修改
+export const requestShopEdit = (data) => {
+    return axios({
+        url: "/api/cartedit",
+        method:"post",
+        data: qs.stringify(data)
+    })
+}
+
+//删除
+export const requestShopDel = (data) => {
+    return axios({
+        url: "/api/cartdelete",
+        method:"post",
+        data: qs.stringify(data)
     })
 }

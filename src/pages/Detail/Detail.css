@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.boxD .hers{
+    width:100vw;
+    padding:0.1rem 0;
+    color:white;
+    font-size: 0.4rem;
+    background-color: orange;
+    text-align: center;
+    position: relative;
+   
+}
+
+.conte1{
+    width:100%;
+    height:3.2rem;
+    overflow: hidden;
+   
+}
+.conte1 .room{
+
+    width:95.5%;
+    font-size: 0.3rem;
+    padding:0.2rem 0  0.2rem  0.3rem;
+    color:silver
+    
+}
+
+.conte1 .room img{
+    margin-right:0.2rem;
+}
+
+.conte1 .Goods{
+    width:8rem;
+     height:2rem;
+     display: flex;
+     transition: all 0.3s;
+}
+.inner-del{
+    
+     margin-left: -0.8rem;
+}
+.conte1 .Goods .sel{
+    height:2rem;
+    line-height: 2rem;
+    padding:0 0.3rem;
+}
+
+.conte1 .Goods .goodsC{
+    height:2rem;
+    width:1.8rem;
+    /* background-color: tomato; */
+    margin-right:0.1rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.conte1 .Goods .goodsC .tu{
+    width:100%;
+    height:100%;
+}
+.conte1 .Goods .center{
+    height:2rem;
+    width:2.7rem;
+    /* background-color: violet; */
+}
+.conte1 .Goods .center .ming{
+   color:#333333;
+   font-size: 0.3rem;
+   margin-bottom:0.7rem;
+}
+.conte1 .Goods .center span{
+    border:0.01rem solid silver;
+    padding:0.1rem 0.35rem;
+   
+}
+.conte1 .Goods .center .mon{
+   font-size: 0.25rem;
+   margin-top:0.25rem;
+
+}
+
+.conte1 .Goods  .right{
+    height:1.7rem;
+    padding-top:0.3rem;
+    padding-right:0.03rem; 
+   
+}
+.conte1 .Goods  .right .pric{
+    font-size: 0.3rem;
+}
+
+.conte1 .Goods .del{
+    width:0.8rem;
+    height:2rem;
+    background-color: orange;
+    font-size: 0.3rem;
+   color:white;
+   line-height: 2rem;
+   text-align: center;
+}
+
+.shop-footer{
+    position: fixed;
+   width: 100%;
+   height: 1.2rem;
+   left: 0;
+   bottom: 1rem;
+   border-top: 1px solid #ccc;
+   overflow: hidden;
+   background: #fff;
+}
+.shop-footer .all{
+    float: left;
+    margin-left: 0.3rem;
+    width: 0.6rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.shop-footer .jieS{
+    width:3rem;
+    height:100%;
+    background-color: orange;
+    color:white;
+    font-size: 0.4rem;
+    position: absolute;
+    right:0;
+    top:0;
+    text-align: center;
+    line-height: 1.2rem;
+
+}
