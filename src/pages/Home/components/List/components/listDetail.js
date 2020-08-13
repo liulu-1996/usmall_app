@@ -13,7 +13,8 @@ class listDetail extends Component {
     constructor() {
         super()
         this.state = {
-            show: false
+            show: false,
+           
         }
     }
 
@@ -37,11 +38,28 @@ class listDetail extends Component {
         })
        
     }
+   
+    onColor(e){
+       
+        if(e.target.className==='r'){
+          
+            e.target.className='r col'
+        }else{
+            e.target.className='r'
+        }
+      
+            
+      
+        //  let num=this.specsattr.findIndex((value, index, array) => {})
+       
+          
+    }
+
     render() {
         const { detail } = this.props
         // console.log(detail, '12334434343')
         // // console.log(JSON.parse(detail.specsattr))
-        const { show } = this.state
+        const { show} = this.state
         return (
             <div className='nuN'>
                 <div className='herD'>
@@ -53,11 +71,11 @@ class listDetail extends Component {
                         return (
                             <div key={item.id}>
                                 <div className='boxL'>
-                                    <img src={item.img} />
+                                    <img src={item.img}  alt=''/>
                                     <div className='cont'>
                                         <p className='tit'>{item.goodsname}</p>
                                         <p className='shouC'>
-                                            <img src={car} className='cars' />
+                                            <img src={car} className='cars' alt=''/>
                                   收藏
                                  </p>
                                     </div>
@@ -82,16 +100,16 @@ class listDetail extends Component {
                                                 <div className='cont-down'>
                                                     <div className='up'>
                                                         <div className='card'>
-                                                            <img src={item.img} />
+                                                            <img src={item.img} alt=''/>
                                                         </div>
                                                         <p>{item.goodsname}</p>
                                                     </div>
                                                     <p className='tit'>{item.specsname}</p>
                                                     <div className='guiG'>
                                                         {
-                                                            JSON.parse(item.specsattr).map(i => {
+                                                            JSON.parse(item.specsattr).map((i,index) => {
                                                                 return (
-                                                                    <p className="r" key={i}>{i}</p>
+                                                                    <p className='r' key={i}   onClick={(e)=>this.onColor(e,i)}>{i}</p>
                                                                 )
                                                             })
                                                         }

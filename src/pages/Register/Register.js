@@ -24,7 +24,7 @@ export default class Register extends Component {
     }
     regisert(){
         register(this.state.user).then(res=>{
-           if(res.data.code==200){
+           if(res.data.code===200){
             successAlert(res.data.msg);
             this.props.history.push('/login')
            }else{

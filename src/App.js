@@ -20,7 +20,7 @@ function App() {
         <Route path='/sortDetail' component={sortDetail}></Route>
         <Route path='/listDetail' component={listDetail}></Route>
         <Route path="/register" component={Register}></Route>
-        <Redirect to='/index'></Redirect>
+        <Redirect to='/login'></Redirect>
       </Switch>
     </div>
   )

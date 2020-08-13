@@ -10,19 +10,19 @@ export default function Mine() {
         <div>
             <div className='box'>
                 <div className='top-s'>
-                    <img src={shez} />
+                    <img src={shez} alt=''/>
                     <p>个人中心</p>
-                    <img src={taol} />
+                    <img src={taol} alt=''/>
                 </div>
                 <div className='down-s'>
                     <div className='tu'>
                         <div>
-                            <img src={tou} />
+                            <img src={tou} alt=''/>
                         </div>
                     </div>
                     <p className='name'>小不点儿</p>
                     <span>
-                        <img src={shou} />
+                        <img src={shou} alt=''/>
                          我的收藏(5)
                     </span>
                 </div>
@@ -34,23 +34,23 @@ export default function Mine() {
                 </div>
                 <ul>
                     <li>
-                        <img src={icon} />
+                        <img src={icon} alt=''/>
                         <p>待发货</p>
                     </li>
                     <li>
-                        <img src={icon} />
+                        <img src={icon} alt=''/>
                         <p>待发货</p>
                     </li>
                     <li>
-                        <img src={icon} />
+                        <img src={icon} alt=''/>
                         <p>待发货</p>
                     </li>
                     <li>
-                        <img src={icon} />
+                        <img src={icon} alt=''/>
                         <p>待发货</p>
                     </li>
                     <li>
-                        <img src={icon} />
+                        <img src={icon} alt=''/>
                         <p>待发货</p>
                     </li>
                 </ul>

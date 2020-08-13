@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import "./Login.css"
-import { login, register } from '../../util/request'
+import { login } from '../../util/request'
 import { successAlert } from '../../util/alert.js'
 import { connect } from "react-redux"
 import { changeUserAction } from "../../store"

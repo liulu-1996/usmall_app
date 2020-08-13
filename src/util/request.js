@@ -1,5 +1,13 @@
 import axios from 'axios'
 import qs from 'qs'
+import store from '../store'
+//请求拦截
+axios.interceptors.request.use(config => {
+    if (config.url !=='/api/login') {
+        config.headers.authorization = store.getState().user.token;
+    }
+    return config
+})
 //响应拦截
 axios.interceptors.response.use(res=>{
     console.log(res);

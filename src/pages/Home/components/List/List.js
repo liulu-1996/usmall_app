@@ -16,7 +16,7 @@ export default function List(props) {
 
                                 <div className='left-n'>
                                     <span>
-                                        <img src={item.img} />
+                                        <img src={item.img} alt=''/>
                                     </span>
                                 </div>
                                 <div className='right-n'>
