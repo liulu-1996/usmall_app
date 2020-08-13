@@ -55,6 +55,14 @@ export const login = (data) => {
     })
 }
 
+//注册
+export const register = (data) => {
+    return axios({
+        url: "/api/register",
+        method: "post",
+        data: qs.stringify(data)
+    })
+}
 //加入购物车
 export const addShop = (data) => {
     return axios({
